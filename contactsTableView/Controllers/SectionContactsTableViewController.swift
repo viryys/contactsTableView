@@ -47,8 +47,10 @@ class SectionContactsTableViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             cell.textLabel?.text = contacts[activeSection].phone
+            cell.imageView?.image = UIImage(systemName: "phone")
         case 1:
             cell.textLabel?.text = contacts[activeSection].eMail
+            cell.imageView?.image = UIImage(systemName: "mail")
         default:
             print("default")
         }
