@@ -14,10 +14,10 @@ class TabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let contactsVC = self.viewControllers?.first as! ContactsTableViewController
+        let contactsVC = viewControllers?.first as! ContactsTableViewController
         contactsVC.contacts = contacts
         
-        let sectionContactsVC = self.viewControllers?.last as! SectionContactsTableViewController
+        let sectionContactsVC = viewControllers?.last as! SectionContactsTableViewController
         sectionContactsVC.contacts = contacts
     }
 }
