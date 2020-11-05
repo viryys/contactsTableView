@@ -9,8 +9,13 @@ import UIKit
 
 class ContactsTableViewController: UITableViewController {
 
-    let contacts: [Person] = ContactsDataManager().getContacts()
+    var contacts: [Person] = []
     
+    override func viewDidLoad() {
+        super .viewDidLoad()
+
+        print("third print")
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let contactInfoVC = segue.destination as! ContactInfoViewController

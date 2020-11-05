@@ -9,7 +9,7 @@ import UIKit
 
 class SectionContactsTableViewController: UITableViewController {
 
-    let contacts: [Person] = ContactsDataManager().getContacts()
+    var contacts: [Person] = []
     
     private var activeSection: Int! = 0
 
