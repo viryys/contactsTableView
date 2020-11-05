@@ -11,11 +11,6 @@ class ContactsTableViewController: UITableViewController {
 
     let contacts: [Person] = ContactsDataManager().getContacts()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        print("contacts", contacts)
-    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let contactInfoVC = segue.destination as! ContactInfoViewController
@@ -39,15 +34,4 @@ class ContactsTableViewController: UITableViewController {
         
         return cell
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
